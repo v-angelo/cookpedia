@@ -1,1 +1,117 @@
-<p>home works!</p>
+<app-header></app-header>
+
+<div class="container">
+  <!-- hero section -->
+  <section class="bg-success p-5 row align-items-center text-light">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-5">
+      <h1>The Easiest Way To Make Your Favorite Meal</h1>
+      <p>
+        Discover 100+ recipes in your hand with the best recipe. Help you to find the easiest way to
+        cook.
+      </p>
+
+      <a routerLink="/recipes" class="btn btn-success border">Explore Our Recipes</a>
+    </div>
+
+    <div class="col-lg-1"></div>
+    <div class="col-lg-5">
+      <img
+        class="w-75 landingImg"
+        src="https://www.pngall.com/wp-content/uploads/2/Healthy-Meal.png"
+        alt="recipe"
+      />
+    </div>
+  </section>
+
+  <!-- popular recipes -->
+  <section class="p-5 my-5">
+    <h1>Popular Recipe of the week</h1>
+
+    <div class="d-flex justify-content-betweeen">
+      <p>Our most popular recipes of the week</p>
+      <a routerLink="/recipes">View all</a>
+    </div>
+
+    <div class="row my-3">
+      <div class="col-lg-4">
+        <div class="p-3">
+          <img
+            class="img-fluid"
+            src="https://media.istockphoto.com/id/1168754685/photo/pizza-margarita-with-cheese-top-view-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=psLRwd-hX9R-S_iYU-sihB4Jx2aUlUr26fkVrxGDfNg="
+            alt="pizza"
+          />
+          <h5>Classic Margherita Pizza Large</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- app links -->
+  <section class="py-5">
+    <article class="mb-5">
+      <div
+        class="d-flex align-items-center justify-content-center justify-content-lg-end rounded overflow-hidden mb-5"
+        style="
+          background-image: url('/grill.jpg');
+          background-size: cover;
+          background-position: center;
+          min-height: 420px;
+        "
+      >
+        <div class="col-10 col-md-7 col-lg-4 me-lg-5 p-0">
+          <div class="bg-light rounded p-4 shadow">
+            <h1 class="fs-2 fw-bold mb-2">50+ Recipes That Very Quick And Fast</h1>
+
+            <p class="text-secondary mb-0">
+              Find the perfect food ideas to start your day with the quick and easiest way.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="bg-success text-white rounded">
+      <div class="row align-items-center py-5">
+        <div class="col-lg-6 text-center mb-4 mb-lg-0">
+          <div class="bg-success rounded mx-auto w-75">
+            <div class="py-5 text-secondary">
+              <img src="/tabletsPhones.png" alt="devices" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <h2 class="fs-1 fw-bold">Download App</h2>
+
+          <p class="fs-6 fw-semibold">
+            Download the App from App Store or
+            <br />
+            Google Play for a better experience
+          </p>
+
+          <div
+            class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+          >
+            <img src="/gp.png" alt="Google Play" class="img-fluid" width="140" />
+            <img src="/app.png" alt="App Store" class="img-fluid" width="140" />
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- testimony -->
+  <section class="container">
+    <h1>Client Testimonials</h1>
+    <div class="d-flex my-5 scroll-text">
+      <!-- duplicate feedback -->
+      <div class="rounded shadow p-3 border me-2 w-25 text-wrap">
+        <h5>Graceson</h5>
+        <p>Good Recipe Website</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<app-footer></app-footer>

@@ -1,1 +1,61 @@
-<p>profile works!</p>
+<app-header></app-header>
+
+<section class="container px-0">
+  <div style="height: 200px" class="bg-success"></div>
+
+  <!-- image -->
+  <div
+    style="height: 220px; width: 220px; border-radius: 50%; margin-top: -100px"
+    class="p-2 border"
+  >
+    <img style="width: 200px; height: 200px; border-radius: 50%" src="" alt="profile" />
+  </div>
+
+  <!-- upload image operation -->
+  <label for="uploading">
+    <input type="file" hidden id="uploading" />
+    <span style="margin-left: 100px; margin-top: -30px" class="btn btn-primary">
+      <i class="fa-solid fa-upload"></i>
+    </span>
+  </label>
+
+  <h1 class="d-flex align-items-center my-5">
+    Graceson J <i class="fa-solid fa-check-circle text-primary"></i>
+  </h1>
+
+  <p style="text-align: justify">
+    🍲 Passionate about discovering simple, delicious recipes and experimenting in the kitchen. I
+    enjoy trying new cuisines, adding my own twists to classic dishes, and sharing my cooking
+    experiences with the Cookpedia community.
+  </p>
+
+  <p>
+    ✨ On Cookpedia, I love exploring quick meals, healthy recipes, and traditional favorites that
+    bring comfort and flavor together.
+  </p>
+
+  <p>📍 Favorite Cuisines: Indian, Italian, Continental</p>
+  <p>❤️ Cooking Level: Beginner → Intermediate</p>
+
+  <p>🕒 Cooking Style: Quick & Easy Meals</p>
+
+  <h3 class="my-5">Recipe Download List</h3>
+  <div class="row">
+    <div class="col-lg-2">
+      <div class="p-1">
+        <img
+          src="https://cdn.dummyjson.com/recipe-images/1.webp"
+          alt="recipe"
+          class="card-img-top img-fluid"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Recipe Name</h5>
+        </div>
+      </div>
+    </div>
+
+    <p class="fw-bolder">You have not download any recipe yet!!!</p>
+  </div>
+</section>
+
+<app-footer></app-footer>

@@ -1,1 +1,76 @@
-<p>login works!</p>
+<section
+  class="min-vh-100 d-flex align-items-center justify-content-center"
+  style="
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.5)), url('/foodBg01.jpg');
+    background-size: cover;
+    background-position: center;
+  "
+>
+  <div class="container position-relative py-5">
+    <div class="row justify-content-center">
+      <div class="col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4">
+        <!-- heading -->
+        <div class="text-center mb-4">
+          <h1 class="fw-bold mb-2">Login</h1>
+
+          <p class="text-dark mb-0">More than 100+ recipes from around the world</p>
+        </div>
+
+        <!-- login Card -->
+        <form class="bg-white border rounded-4 shadow p-4 p-md-5">
+          <!-- logo -->
+          <div class="text-center text-success mb-4">
+            <a routerLink="/" class="text-success text-decoration-none">
+              <h3 class="fw-bold mb-0">
+                <i class="fa-solid fa-utensils me-2"></i>
+                Cookpedia
+              </h3>
+            </a>
+          </div>
+
+          <!-- email -->
+          <div class="mb-2">
+            <label for="email" class="form-label fw-semibold"> Email </label>
+
+            <input type="email" id="email" class="form-control" placeholder="Enter your email" />
+          </div>
+
+          <!-- email error -->
+          <p class="text-danger small mb-3">*Invalid Email</p>
+
+          <!-- password -->
+          <div class="mb-2">
+            <label for="password" class="form-label fw-semibold"> Password </label>
+
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <!-- password error -->
+          <p class="text-danger small mb-3">*Invalid Password</p>
+
+          <!-- login -->
+          <div class="d-grid mb-4">
+            <button type="submit" class="btn btn-success fw-semibold py-2">Login</button>
+          </div>
+
+          <!-- register -->
+          <div class="text-center">
+            <p class="text-secondary mb-0">
+              Are you a New User?
+
+              <a routerLink="/register" class="text-success fw-semibold text-decoration-none">
+                Register
+              </a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
