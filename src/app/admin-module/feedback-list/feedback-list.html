@@ -1,1 +1,45 @@
-<p>feedback-list works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2">
+      <app-admin-sidebar></app-admin-sidebar>
+    </div>
+
+    <div class="col">
+      <app-admin-header></app-admin-header>
+      <div class="m-3">
+        <h1>Feedback List</h1>
+
+        <table class="table my-5 table-striped table-hover">
+          <thead>
+            <tr class="table-success">
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Message</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John</td>
+              <td>john@gmail.com</td>
+              <td>Good Website</td>
+              <td>
+                <div class="d-flex gap-3">
+                  <button class="btn btn-success">
+                    <i class="fa-solid fa-check"></i>
+                  </button>
+                  <button class="btn btn-danger">
+                    <i class="fa-solid fa-x"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

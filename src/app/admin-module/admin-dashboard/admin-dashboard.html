@@ -1,1 +1,66 @@
-<p>admin-dashboard works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2">
+      <app-admin-sidebar></app-admin-sidebar>
+    </div>
+
+    <div class="col">
+      <app-admin-header></app-admin-header>
+
+      <div class="row mt-5">
+        <div class="col-lg-3">
+          <div
+            style="background-color: orange"
+            class="d-flex p-2 rounded text-light justify-content-center align-items-center"
+          >
+            <i class="fs-1 me-3 fa-solid fa-users"></i>
+            <div>
+              <h4>Users</h4>
+              <h5>12</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div
+            style="background-color: greenyellow"
+            class="d-flex p-2 rounded text-light justify-content-center align-items-center"
+          >
+            <i class="fs-1 me-3 fa-solid fa-bowl-rice"></i>
+            <div>
+              <h4>Recipes</h4>
+              <h5>12</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div
+            style="background-color: cyan"
+            class="d-flex p-2 rounded text-light justify-content-center align-items-center"
+          >
+            <i class="fs-1 me-3 fa-solid fa-download"></i>
+            <div>
+              <h4>Downloads</h4>
+              <h5>12</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div
+            style="background-color: plum"
+            class="d-flex p-2 rounded text-light justify-content-center align-items-center"
+          >
+            <i class="fs-1 me-3 fa-solid fa-message"></i>
+            <div>
+              <h4>Feedbacks</h4>
+              <a routerLink="/admin/feedback"></a>
+              <h5>12</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

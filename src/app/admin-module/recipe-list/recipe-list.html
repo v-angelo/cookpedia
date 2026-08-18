@@ -1,1 +1,59 @@
-<p>recipe-list works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2">
+      <app-admin-sidebar></app-admin-sidebar>
+    </div>
+
+    <div class="col">
+      <app-admin-header></app-admin-header>
+      <div class="m-3">
+        <h1>All Recipe List</h1>
+
+        <div class="d-flex justify-content-between align-items-center mt-5">
+          <a routerLink="/admin/recipe/add">Add Recipe</a>
+
+          <input type="text" class="form-control w-25" placeholder="Search for Recipes!!" />
+        </div>
+
+        <table class="table my-5 table-striped table-hover">
+          <thead>
+            <tr class="table-success">
+              <th>#</th>
+              <th>Name</th>
+              <th>Image</th>
+              <th>Cuisine</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Pizza</td>
+              <td>
+                <img
+                  width="60px"
+                  class="img-fluid"
+                  src="https://cdn.dummyjson.com/recipe-images/1.webp"
+                  alt="recipeImg"
+                />
+              </td>
+              <td>Good Website</td>
+              <td>
+                <div class="d-flex gap-3 align-items-center">
+                  <a routerLink="/admin/recipe/123">
+                    <i class="fa-solid fa-pen-to-square fs-4"></i>
+                  </a>
+
+                  <button class="btn btn-danger">
+                    <i class="fa-solid fa-trash fs-4"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
