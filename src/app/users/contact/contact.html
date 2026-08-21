@@ -15,6 +15,7 @@
 
   <section class="row my-5 align-items-center">
     <div class="col-lg-1"></div>
+
     <div class="col-lg-4">
       <h1>Get In Touch</h1>
       <p style="text-align: justify">
@@ -89,34 +90,75 @@
         </div>
       </div>
     </div>
+
     <div class="col-lg-2"></div>
-    <div class="col-lg-4">
-      <form class="border shadow p-5 rounded">
+
+    <div class="col-lg-4 mt-3">
+      <form
+        #testimonialForm="ngForm"
+        (ngSubmit)="addTestimony(testimonialForm)"
+        class="border shadow p-5 rounded"
+      >
         <h3>Client Testimony</h3>
+
         <div class="mb-3 mt-5">
-          <input placeholder="Name" type="text" class="form-control" required pattern="[a-zA-Z ]" />
+          <input
+            name="name"
+            [(ngModel)]="name"
+            #username="ngModel"
+            placeholder="Name"
+            type="text"
+            class="form-control"
+            required
+            pattern="[a-zA-Z ]+"
+          />
         </div>
 
-        <div class="mb-3 text-danger">Invalid Name</div>
+        @if (username.invalid && username.touched) {
+          <div class="mb-3 text-danger">Invalid Name</div>
+        }
 
         <div class="mb-3">
-          <input placeholder="Email" type="text" class="form-control" required email />
+          <input
+            name="email"
+            [(ngModel)]="email"
+            #useremail="ngModel"
+            placeholder="Email"
+            type="email"
+            class="form-control"
+            required
+            email
+          />
         </div>
 
-        <div class="mb-3 text-danger">Invalid Email</div>
+        @if (useremail.invalid && useremail.touched) {
+          <div class="mb-3 text-danger">Invalid Email</div>
+        }
 
         <div class="mb-3">
-          <textarea placeholder="Message" class="form-control" required></textarea>
+          <textarea
+            name="message"
+            [(ngModel)]="message"
+            #usermessage="ngModel"
+            placeholder="Message"
+            class="form-control"
+            required
+          ></textarea>
         </div>
 
-        <div class="mb-3 text-danger">Invalid Message</div>
+        @if (usermessage.invalid && usermessage.touched) {
+          <div class="mb-3 text-danger">Invalid Message</div>
+        }
 
         <p class="text-secondary">
-          By Submitting, your agreeing the terms and condition of our website. We may use your
-          details in our site.
+          By submitting, you're agreeing to the terms and conditions of our website. We may use your
+          details on our site.
         </p>
+
         <div class="mb-3 float-end">
-          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="submit" class="btn btn-success" [disabled]="testimonialForm.invalid">
+            Submit
+          </button>
         </div>
       </form>
     </div>

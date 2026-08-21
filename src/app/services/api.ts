@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable, Service } from '@angular/core';
 import { environment } from '../../environments/environment';
+import { Observable } from 'rxjs';
 
 // @Service()
 @Injectable({
@@ -15,7 +16,7 @@ export class Api {
     console.log('API URL:', this.serverUrl);
   }
 
-  //   register user api
+  // register user api
   registerAPI(reqBody: any) {
     return this.http.post(`${this.serverUrl}/register`, reqBody);
   }
@@ -23,5 +24,15 @@ export class Api {
   // login user api
   loginAPI(reqBody: any) {
     return this.http.post(`${this.serverUrl}/login`, reqBody);
+  }
+
+  // api for add testimonials
+  addTestimonialsAPI(reqBody: any) {
+    return this.http.post(`${this.serverUrl}/add/testimonials`, reqBody);
+  }
+
+  // get all recipes
+  getAllRecipesAPI(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.serverUrl}/all-recipes`);
   }
 }
